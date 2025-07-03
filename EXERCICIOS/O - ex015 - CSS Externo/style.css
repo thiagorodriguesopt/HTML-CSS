@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* Regra @chaset caso haja problemas com acentuação */
+ body{
+            background-color: aqua;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            background-color: red;
+            color: blue;
+        }
+        h2{
+            color: red;
+            background-color: rgb(13, 13, 236);
+        }
+        p{
+            text-align: justify;
+            
+        }

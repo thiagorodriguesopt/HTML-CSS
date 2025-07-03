@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+     <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essas imagens em outro dispositivo ou aumente e diminia a tela</p>
+    <picture>
+        <source media="(max-width:730px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1030px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <H1>Colocando audio </H1>
+    <p>Para colocar audio usamos a TAG &lt;audio&gt; e depois colocamos algumas atribuições</p>
+    <code>
+        <p>&lt;audio&gt; src="musica /gta- musica.mp3" controls>&lt;/audio&gt;</p>
+    </code>
+    <br>
+    <audio src="musica/gta- musica.mp3" controls></audio>
+     <p>Ou podemos fazer assim caso queremos colocar outro tipos de audio, que são MP3 (mais usado), WAV, OGG:</p>
+     
+       <pre><code>
+        &lt;audio <strong>controls</strong> preload="metadata"&gt;
+            &lt;source src="musica/gta- musica.mp3" type="audio/mp3"&gt;
+            &lt;source src="musica/gta- musica.wav" type="audio/wav"&gt;
+            &lt;source src="musica/gta- musica.ogg" type="audio/ogg"&gt;
+        &lt;/audio &gt;
+         </code></pre>
+     
+     <P>Os atributos colocados no audio a cima são CONTROLS (para aparecer o controles de auto) e PRELOAD (que serve para informa se a plataforma carrega os dados completo {auto} se carrega apenas as informações basicas {metadata} ou se não é para carregar nada {none})</P>
+     <br>
+     <audio controls preload="metadata">
+        <source src="musica/gta- musica.mp3" type="audio/mp3">
+        <source src="musica/gta- musica.wav" type="audio/wav">
+        <source src="musica/gta- musica.ogg" type="audio/ogg">
+     </audio>
+</body>
+</html>
